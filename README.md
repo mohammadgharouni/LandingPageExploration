@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+this project is built based on : https://dribbble.com/shots/12157151-Landing-page-exploration/attachments/3783625?mode=media
+
+i uesd typescript and redux as well
 
 ## Available Scripts
 
