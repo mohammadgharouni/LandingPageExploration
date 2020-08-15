@@ -1,0 +1,43 @@
+@import "./sass/_mixins.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 100%; 
+
+  @include respond(tab-land) { 
+      font-size: 65%; 
+    //   background-color: red;
+  }
+
+  @include respond(tab-port) {
+      font-size: 50%; 
+    //   background-color: yellow;
+
+
+    }
+
+    @include respond(phone) {
+        font-size: 50%; 
+        // background-color: orangered;
+  
+    }
+  
+  @include respond(big-desktop) {
+      font-size: 150%;
+    //   background-color: green;
+
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

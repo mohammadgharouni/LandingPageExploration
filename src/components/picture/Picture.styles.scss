@@ -1,0 +1,10 @@
+.Picture{
+    position: absolute;
+    border-radius: 10px;
+    transition: 0.2s all ease-out;
+
+    &:hover{
+        transform: scale(1.09);
+        z-index: 100;
+    }
+}

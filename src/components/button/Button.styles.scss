@@ -1,0 +1,25 @@
+.myButton{
+    height: 2rem;
+    display: inline-block;
+    width: 6rem;
+    background-color: white;
+    border-radius: 0.5rem ;
+    border-width: 0;
+    overflow: hidden;
+    cursor: pointer;
+transition: 0.2s all;
+
+    &:focus{
+        transform: scale(1.2);
+        outline: none;      
+        
+        &::after{
+            transform: scale(1);
+
+        }
+    }
+
+
+ 
+}
+

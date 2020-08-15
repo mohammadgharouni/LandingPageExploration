@@ -1,0 +1,245 @@
+$base-color: rgb(0, 68, 127);
+@import "../../sass/mixins.scss";
+.Header {
+
+    width: 100%;
+    height: 40rem;
+
+    .menu {
+        position: relative;
+        display: none;
+        @include respond(phone) {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+
+            .menuIcon{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 2rem;
+                padding: 2.5rem;
+                font-size: 2rem;
+                text-align: flex-end;
+            }
+         
+        }
+    }
+
+    .navbar {
+        width: 80%;
+        display: inline-block;
+        text-align: right;
+        border: none;
+        outline: 0;
+        li {
+            display: inline-block;
+            padding: 0.5rem;
+            margin-right: 2rem;
+            a {
+                padding: 0.5rem;
+                border: none;
+                border-bottom: 2px solid transparent;
+                outline: 0;
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    border-bottom: 2px solid grey;
+
+                }
+                &:active,
+                &:focus &:visited {
+                    outline: none;
+                    border-bottom: 2px solid black;
+
+                }
+            }
+
+        }
+        @include respond(phone) {
+            display: none;
+        }
+
+    }
+    button {
+        background-color: $base-color;
+        display: inline-block;
+        color: white;
+        font-size: 1rem;
+        @include respond(tab-port) {
+            font-size: 1rem;
+        }
+        @include respond(phone) {
+            
+                color: white;
+                display: block;
+                &:nth-child(3){
+                    display: none;
+                }
+            
+        }
+
+    }
+
+    .main {
+         
+        @include respond(phone){
+            position: relative;
+        }
+        .imageContainer {
+            float: left;
+            margin-left: 6rem;
+            width: 5%;
+            height: 100%;
+            position: relative;
+            .textBox {
+                padding: 1rem;
+                width: 18rem;
+                height: 8rem;
+                background-color: white;
+                box-shadow: 5px 5px 5px rgb(116, 116, 116);
+                border-radius: 20px;
+                position: absolute;
+                bottom: 0;
+                left: 8rem;
+                p {
+                    padding: 0.75rem;
+                    font-size: 1rem;
+                }
+
+                .iconLeft {
+                    color: $base-color;
+                    float: left;
+
+                }
+                .iconRight {
+                    color: $base-color;
+                    float: right;
+
+                }
+
+                h1 {
+                    font-size: 1rem;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                @include respond(phone) {
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 30rem;
+                    left: 50%;
+                }
+
+            }
+
+            img {
+                border-radius: 10px;
+                width: 25rem;
+                height: 35rem;
+
+                 @include respond(phone) {
+                 margin-top: 15rem;
+                 width: 50%;
+                 height: 30em;
+            }
+
+            }
+            @include respond(phone) {
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 4rem;
+                position: absolute;
+                top: 20rem;
+            }
+
+        }
+
+        .textContainer {
+            float: right;
+            width: 70%;
+            height: 100%;
+            text-align: start;
+
+            h1 {
+                width: 50%;
+                margin-left: 16rem;
+                @include respond(phone) {
+                    width: 100%;
+                    display: block;
+                    margin: 2rem auto;
+                    text-align: center;
+                }
+            }
+            h4 {
+                padding: 0;
+                width: 50%;
+                letter-spacing: 2px;
+                margin-left: 16rem;
+                @include respond(phone) {
+                    width: 100%;
+                    display: block;
+                    margin: 1.5rem auto;
+                    text-align: center;
+                    font-size: 1.5rem;
+
+                }
+
+            }
+
+            .email {
+                display: flex;
+                margin-left: 16rem;
+                justify-content: flex-start;
+                text-align: flex-start;
+                input {
+                    justify-content: flex-start;
+                    text-align: flex-start;
+                    font-size: 1rem;
+                    margin-right: 1rem;
+
+                    align-self: flex-start;
+                }
+                @include respond(phone) {
+                    justify-content: center;
+
+                    padding: 0;
+                    margin: 0 auto;
+                    width: 90%;
+                    text-align: flex-start;
+                }
+
+                button {
+                    justify-content: flex-start;
+                    text-align: flex-start;
+                    @include respond(tab-port) {
+                        padding: 0;
+                        margin-top: 1rem;
+                        width: 5rem;
+                        text-align: flex-start;
+                    }
+                }
+            }
+            p {
+                margin-left: 16rem;
+                width: 50%;
+                @include respond(phone) {
+                    width: 90%;
+                    font-size: 1.5rem;
+                    display: block;
+                    margin: 2rem auto;
+                    text-align: center;
+                }
+            }
+            @include respond(phone) {
+                width: 100%;
+                text-align: center;
+                margin-top: 5rem;
+
+            }
+        }
+
+    }
+
+}

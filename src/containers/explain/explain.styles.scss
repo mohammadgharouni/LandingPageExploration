@@ -1,0 +1,126 @@
+$base-color: rgb(0, 68, 127);
+@import "../../sass/_mixins.scss";
+.Explain {
+
+    margin: 4rem 0;
+    width: 100%;
+    height:40rem;
+    background-color: $base-color;
+    position: relative;
+    .textContainer {
+        float: left;
+        width: 55%;
+        height: initial;
+        text-align: left;
+        margin: 10.3rem 0 6rem 9rem;
+
+        h1 {
+            font-size:3rem;
+            width: 100%;
+            color: white;
+            margin-top: 0;
+            margin-bottom:3rem ;
+            
+        @include respond(phone){
+            font-size: 2.5rem;
+            text-align: center;
+            width: 100%;
+            margin: 1rem auto;
+
+        }
+
+        }
+        p {
+            width: 60%;
+            margin-bottom:3rem ;
+            font-weight: 300;
+            color: white;
+            
+        @include respond(phone){
+            text-align: center;
+            font-size: 1.5rem;
+            width: 80%;
+            margin: 0 auto;
+            margin: 5rem auto;
+            padding: 1rem;
+        }
+        }
+
+        button {
+            width: 8rem;
+            font-weight: 600;
+            color: $base-color;
+            font-size: 1rem;
+            @include respond(tab-port){
+                width: 10rem;
+                font-size: 1.5rem;
+            }
+        }
+
+
+        @include respond(phone){
+            text-align: center;
+            width: 100%;
+            margin: 5rem auto;
+
+        }
+    }
+
+    .imgContainer {
+        width: 80%;
+        position: absolute;
+        left: 45%;
+        top: 20%;
+        img {
+            height: 35rem;
+            width: 20rem;
+                border-top-right-radius: 50px;
+            border-top-left-radius: 1rem;
+
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 1rem;
+
+            position: absolute;
+          
+        }
+        float: right;
+        width: 50%;
+
+        .credit {
+            align-items: center;
+            height: 15rem;
+            width: 12rem;
+            background: rgba($color: #ffffff, $alpha: 0.9);
+            border-radius: 1rem;
+            position: absolute;
+            top:15rem;   
+            left: 35%;
+
+            .creditIcon {
+                margin-top: 3rem;
+                font-size: 3rem;
+                color: #f1c892;
+                transform: rotate(270deg);
+
+            }
+
+            h2 {
+
+                color: $base-color;
+            }
+        }
+
+        @include respond(phone){
+         
+            display: none;
+        }
+    }
+
+
+    @include respond(phone){
+        height: 40rem;
+        margin-top: 30rem;
+        padding: 0;
+    }
+
+}

@@ -1,0 +1,42 @@
+$base-color: rgb(0, 68, 127);
+
+
+.card {
+    text-align: left;
+    transition: 0.2s all ease-out;
+    height: 200px;
+    padding: 3rem;
+    overflow: hidden;
+    max-width: 150px;
+    display: inline-block;
+    background-color: rgb(236, 234, 234);
+    border-radius: 5%;
+    margin: 1rem;
+    &:first-child{
+        margin-left: 2rem;
+
+    }
+    &:hover {
+        background-color: $base-color;
+        color: white;
+        .icon{
+            background-color:transparent;
+            color: white;
+        }
+    }
+    .icon {
+        font-size: 2rem;
+        color: $base-color;
+        background-color: transparent;
+      
+    }
+
+    p {
+        color: rgb(131, 131, 131);
+    }
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+}

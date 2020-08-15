@@ -1,0 +1,163 @@
+@import "../../sass/_mixins.scss";
+
+.about {
+    margin-top: 5rem;
+
+    margin-bottom: 10rem;
+    position: relative;
+    height: 600px;
+    width: 100%;
+
+    .imageContainer {
+        width: 30%;
+        height: 70em;
+        margin-left: 2rem;
+        position: absolute;
+        transition: 0.2s all ease-out;
+
+        @include respond(phone) {
+            width: 80%;
+            top: 10em;
+            left: 15%;
+            margin: 0 auto;
+            text-align: center;
+            transition: none;
+        }
+
+        .lake {
+            height: 15rem;
+            width: 15rem;
+            top: 0;
+            left: 10%;
+            @include respond(tab-port) {
+                top: 8%;
+            }
+            @include respond(phone) {
+                top: 10em;
+                left: 60%;
+                height: 15rem;
+                width: 15rem;
+            }
+        }
+
+        .girl {
+            height: 30rem;
+            width: 20rem;
+            top: 10%;
+            left: 75%;
+            z-index: 1;
+            @include respond(tab-land) {
+                top: 10%;
+                left: 70%;
+
+            }
+            @include respond(tab-port) {
+                top: 10em;
+                left: 20em;
+
+            }
+            @include respond(phone) {
+                top: 8em;
+                left: 30%;
+                height: 15rem;
+                width: 15rem;
+            }
+
+        }
+
+        .guy {
+            height: 25rem;
+            border-radius: 10px;
+            width: 20rem;
+            top: 25%;
+            left: 10%;
+            @include respond(tab-land) {
+                top: 25%;
+            }
+            @include respond(tab-port) {
+                top: 33%;
+            }
+            @include respond(phone) {
+                padding: 0em;
+                top: 10em;
+                left: 0;    
+                height: 15em;
+                width: 15em;
+            }
+        }
+
+        @include respond(phone) {
+            margin: 0 auto;
+            padding: 0;
+            width: 65%;
+           left: 10rem;
+        }
+    
+    }
+
+    .textContainer {
+        margin-top: 8rem;
+        width: 50%;
+        height: initial;
+        float: right;
+        text-align: left;
+
+        h1 {
+            margin-left: 40px;
+            font-size: 3rem;
+            letter-spacing: 5px;
+            width: 60%;
+
+            @include respond(phone) {
+                width: 80%;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        p {
+            margin-left: 40px;
+            width: 60%;
+
+            @include respond(phone) {
+                width: 80%;
+                text-align: center;
+                margin: 2rem auto;
+            }
+
+        }
+        hr {
+            margin-top: 5rem;
+            width: 30%;
+            text-align: left;
+            height: 2px;
+            border-width: 0;
+            color: gray;
+            direction: ltr;
+            margin-left: 42px;
+            background-color: gray;
+
+            @include respond(phone) {
+                width: 80%;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        @include respond(tab-port) {
+            width: 50%;
+            padding-left: 100em !important;
+        }
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+    }
+    @include respond(phone) {
+        text-align: center;
+        position: relative;
+    }
+
+
+
+}

@@ -1,0 +1,64 @@
+.dropdown {
+    height: 20rem;
+    width: 15rem;
+    text-align: right;
+    position: absolute;
+    top: 5em;
+    right:1em;
+    z-index: 100;
+    display: none;
+    border: 3px 2px solid grey;
+    box-shadow: 2px 2px 8px black;
+    background-color: #eee;
+    border-radius: 4px;
+    animation: growDown 0.3s ease-in-out forwards;
+    transform-origin: top center;
+    ul {
+
+        text-align: center;
+        list-style: none;
+
+        li {
+            list-style: none;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            margin-right: 5rem;
+            margin-top: 2.5rem;
+
+            a {
+                padding: 0.5rem;
+                border: none;
+                border-bottom: 2px solid transparent;
+                outline: 0;
+                text-decoration: none;
+                color: black;
+                &:active,
+                &:focus &:visited {
+                    outline: none;
+                    border-bottom: 2px solid black;
+
+                }
+        }
+    }
+}
+}
+
+.show {
+    display: block;
+
+}
+
+.hide {
+    opacity: 0;
+}
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+    80% {
+        transform: scaleY(1.1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}

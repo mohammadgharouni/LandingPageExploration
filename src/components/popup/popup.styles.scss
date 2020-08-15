@@ -1,0 +1,62 @@
+@import "../../sass/mixins.scss";
+.popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    top: 25%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.875);
+    border: 1px solid black;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 200;
+    text-align: center;
+    transition: 0.2s all ease-in;
+    opacity: 0;
+    
+
+    @include respond(tab-land){
+        top: 10%;
+        left: 20em;
+        height: 50%;
+        width: 60%;
+    }
+
+    @include respond(tab-port){
+        top: 8%;
+        left: 20em;
+        height: 40%;
+        width: 60%;
+    }
+
+    @include respond(phone){
+        top: 28%;
+        left: 12em;
+        height: 50%;
+        width: 60%;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    p{
+    }
+}
+
+.show{
+opacity: 100;
+
+}
+
+
+.hide{
+opacity: 0;
+
+}

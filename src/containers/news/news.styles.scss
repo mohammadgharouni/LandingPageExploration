@@ -1,0 +1,94 @@
+$base-color: rgb(0, 68, 127);
+@import "../../sass/mixins.scss";
+
+.News {
+    align-items: center;
+    text-align: center;
+    margin: 6rem auto 1rem auto;
+    width: 90%;
+    border-radius: 0.5rem;
+    height: 20rem;
+    border: none;
+    border-width: 0;
+    background-color: $base-color;
+
+
+    @include respond(tab-land){
+        margin-top: -20rem;
+
+    }
+
+    @include respond(tab-port){
+        margin-top: -30rem;
+
+    }
+
+    @include respond(phone){
+        margin-top: -45rem;
+
+    }
+
+    h1 {
+        padding: 3rem;
+        text-align: center;
+        width: 45%;
+        margin: 0 auto;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .emailContainer {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        button {
+            height: 2.4rem;
+            margin-left: 0.5rem;
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: $base-color;
+
+            @include respond(tab-land){
+                height: 3.5rem;
+            }
+            @include respond(tab-port){
+                height: 3.0rem;
+            }
+        }
+
+        input {
+            height: 1.2rem;
+            padding: 10px;
+            border: 0;
+            box-shadow: 20px 0 35px 4px rgba(0,0,0,0.06);
+            border-bottom: 3px solid transparent;
+            transition: 0.2s all;
+            font-size: 1rem;
+            &:focus {
+
+                border: 0;
+                outline: none;
+                border-bottom: 3px solid black;
+            }
+            @include respond(tab-port){
+                height: 0.1rem;
+            }
+
+            
+       
+    
+        }
+
+        @include respond(phone){
+            height: 20rem;
+        }
+
+
+    }
+
+    @include respond(phone){
+        height:25rem;
+        margin: inherit auto;
+    }
+
+}
